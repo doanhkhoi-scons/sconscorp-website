@@ -2338,3 +2338,32 @@ margin-bottom:20px;
 font-size:24px;
 
 }
+/* ==========================
+   BACKGROUND LOGO
+========================== */
+
+.brand-watermark{
+    position:fixed;
+    left:-660px;
+    top:50%;
+    transform:translateY(-50%);
+    width:1520px;
+    z-index:-1;
+    pointer-events:none;
+    user-select:none;
+}
+
+.brand-watermark img{
+    width:100%;
+    display:block;
+    opacity:.18;
+    filter:grayscale(5%);
+}
+.brand-watermark{
+
+    transition:0.8s;
+}
+body:hover .brand-watermark{
+
+    opacity:1;
+}
