@@ -2374,3 +2374,7 @@ body:hover .brand-watermark{
 
     opacity:1;
 }
+
+.brand-red{
+    color: var(--red);
+}
