@@ -194,6 +194,13 @@ a {
 }
 
 .hero {
+  .gold-text{
+    color:#c8a24b;
+}
+
+.red-text{
+    color:#d52b1e;
+}
   position: relative;
   overflow: hidden;
   width: var(--container);
@@ -213,7 +220,7 @@ a {
 
 .eyebrow {
   margin: 0;
-  color: var(--ink);
+  color: var(--red);
   font-size: clamp(2.8rem, 8vw, 6.6rem);
   font-weight: 800;
   line-height: 0.82;
