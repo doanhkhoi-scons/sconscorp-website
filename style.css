@@ -1190,13 +1190,54 @@ ABOUT - COMPANY
 
 }
 
-.intro-image img{
+.intro-image{
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    position:relative;
+
+}
+
+.slideshow{
+
+    position:relative;
 
     width:100%;
 
-    border-radius:8px;
+    aspect-ratio:16/9;
 
-    display:block;
+    overflow:hidden;
+
+    border-radius:10px;
+
+}
+
+.slide{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:opacity 1.5s ease;
+
+    transform:scale(1);
+
+    animation:none;
+
+}
+.slide.active{
+
+    opacity:1;
+
+    animation:kenburns 10s linear forwards;
 
 }
 /*==============================
@@ -2377,4 +2418,41 @@ body:hover .brand-watermark{
 
 .brand-red{
     color: var(--red);
+}
+
+.building-sketch{
+    position:fixed;
+    right:-120px;
+    top:150px;
+
+    width:1250px;
+    height:auto;
+
+    opacity:0.2;
+
+    pointer-events:none;
+    user-select:none;
+
+    z-index:0;
+}
+
+.building-sketch img{
+    width:100%;
+    display:block;
+}
+
+@keyframes kenburns{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.3);
+
+    }
+
 }
